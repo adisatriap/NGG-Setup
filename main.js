@@ -37,7 +37,7 @@ function healthCheckPublish (device) {
   // Format the date in SGP Timezone (e.g., "2024-05-08T14:36:42.273+08:00")
   const currentDate = moment().tz('Asia/Singapore').format('YYYY-MM-DD HH:mm:ss')
   const healthCheckPayload = {
-    status: 'TEST',
+    status: 'HEALTHY',
     device: clientId,
     timeStamp: currentDate,
     group: groupName
